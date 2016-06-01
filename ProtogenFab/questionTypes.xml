@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<questionTypes xsi:schemaLocation="questionTypes.xsi">
+  <defaultQuestions>
+    <defaultQ name='Mötets öppnande' id='1'>
+      <title>Mötets öppnande</title>
+      <decisionType></decisionType>
+      <optional>No</optional>
+      <document>No</document>
+    </defaultQ>
+  </defaultQuestions>
+  
+  <types>
+    <title>
+    </title>
+  </types>
+</questionTypes>

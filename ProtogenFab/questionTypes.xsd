@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<xs:schema>
+<xs:element name="questions">
+  <xs:complexType>
+    <xs:element name="question">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element name="number" type="xs:integer"/>
+          <xs:element name="title" type="xs:string"/>
+          <xs:element name="decision" type="xs:decisionType"/>
+          <xs:element name="optional" type="xs:boolean" default="True"/>
+          <xs:element name="document" type="xs:boolean" default="False"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+  </xs:complexType>
+</xs:element>
+  <xs:simpleType name="decisionType">
+          <xs:restriction base="xs:string">
+            <xs:enumeration id="1" value="PeopleElection"/>
+            <xs:enumeration id="2" value="Document"/>
+            <xs:enumeration id="3" value="Formalia"/>
+            <xs:enumeration id="4" value="Uppdra"
+          </xs:restriction>
+        </xs:simpleType>
+</xs:schema>
